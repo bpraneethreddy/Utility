@@ -80,10 +80,11 @@ public class AppUtil {
 	 * @param pathSeparator
 	 * @return
 	 */
-	public static String getFileNameByFilePath(String path, String pathSeparator) { // gets
-																					// filename
-																					// without
-																					// extension
+	// gets
+	// filename
+	// without
+	// extension
+	public static String getFileNameByFilePath(String path, String pathSeparator) { 
 		int dot = path.length();
 		int sep = path.lastIndexOf(pathSeparator);
 		return path.substring(sep + 1, dot);
